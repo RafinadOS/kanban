@@ -72,8 +72,8 @@ VirtusKanbanColumn.prototype = {
         }
 
         this.layout.container = document.createElement('div');
-        this.layout.container.setAttribute('data-id', this.id);
-        this.layout.container.setAttribute('data-type', 'column');
+        this.layout.container.dataset.id = this.id;
+        this.layout.container.dataset.type = 'column';
 
         return this.layout.container;
     },
@@ -81,9 +81,7 @@ VirtusKanbanColumn.prototype = {
     render: function() {
 
         this.createlayout();
-
         return this.layout.container;
-
     }
 
 }
@@ -135,7 +133,7 @@ var virtusKanban = new VirtusKanbanGrid(
             }
         ],
 
-        container: document.getElementById('virtus')
+        container: document.getElementById('virtusKanban')
     }
 )
 

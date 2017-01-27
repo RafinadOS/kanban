@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "Павел Рафеев",
+        "avatar": "img/users/3.png",
+        "email": "rafeev.pavel@gmail.com",
+        "phone": "+7 905 2497788",
+        "adress": {
+            "street": "Gogolya 7b",
+            "city": "Kaliningrad",
+            "suite": "268"    
+        },
+        "company": "RedStart"
+    },
+    {
+        "id": 2,
+        "name": "Станислав Белинский",
+        "avatar": "img/users/2.png",
+        "email": "stas.bel@gmail.com",
+        "phone": "+7 911 4985258",
+        "adress": {
+            "street": "Mayakovskaya 45",
+            "city": "Kaliningrad",
+            "suite": "17"
+        },
+        "company": "RedStart"
+    },
+    {
+        "id": 3,
+        "name": "Виктория Исупова",
+        "avatar": "img/users/3.png",
+        "email": "vika.vika@gmail.com",
+        "phone": "+7 999 9985747",
+        "adress": {
+            "street": "Gromova 12/2",
+            "city": "Kaliningrad",
+            "suite": "82"
+        },
+        "company": "Costumer Group"
+    }
+]

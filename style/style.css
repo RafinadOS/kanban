@@ -88,4 +88,118 @@ html, body {
     width: 100%;
     background: #2f3242;
     box-shadow: 0 0 80px rgba(0, 0, 0, .8);
+    padding: 0 24px;
+}
+
+.headerUser {
+    float: right;
+    overflow: hidden;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.headerUser__avatar {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.headerUser__notification {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 85px;
+    max-width: 85px;
+    height: 35px;
+    position: relative;
+    background: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20version%3D%221.1%22%20viewBox%3D%220%200%20510%20510%22%3E%3Cpath%20d%3D%22M255%2C510c28.05%2C0%2C51-22.95%2C51-51H204C204%2C487.05%2C226.95%2C510%2C255%2C510z%20M420.75%2C357V216.75%20%20%20%20c0-79.05-53.55-142.8-127.5-160.65V38.25C293.25%2C17.85%2C275.4%2C0%2C255%2C0c-20.4%2C0-38.25%2C17.85-38.25%2C38.25V56.1%20%20%20%20c-73.95%2C17.85-127.5%2C81.6-127.5%2C160.65V357l-51%2C51v25.5h433.5V408L420.75%2C357z%20M369.75%2C382.5h-229.5V216.75%20%20%20%20C140.25%2C153%2C191.25%2C102%2C255%2C102s114.75%2C51%2C114.75%2C114.75V382.5z%22%20fill%3D%22%23FFFFFF%22/%3E%3C/svg%3E%0A') center center no-repeat;
+    background-size: 26px 31px;
+}
+
+.headerUser__notification-alert:before {
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 29%;
+    left: 60%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    background: #2196f3;
+    border-radius: 50%;
+    border: 3px solid #2f3242;
+}
+
+.headerUser__search {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.search {
+    display: block;
+    overflow: hidden;
+    width: 35px;
+    height: 45px;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 700;
+    color: transparent;
+    position: relative;
+    border: none;
+    background: transparent url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20446.25%20446.25%22%3E%3Cpath%20d%3D%22M318.75%2C280.5h-20.4l-7.649-7.65c25.5-28.05%2C40.8-66.3%2C40.8-107.1C331.5%2C73.95%2C257.55%2C0%2C165.75%2C0S0%2C73.95%2C0%2C165.75%20%20%20%20S73.95%2C331.5%2C165.75%2C331.5c40.8%2C0%2C79.05-15.3%2C107.1-40.8l7.65%2C7.649v20.4L408%2C446.25L446.25%2C408L318.75%2C280.5z%20M165.75%2C280.5%20%20%20%20C102%2C280.5%2C51%2C229.5%2C51%2C165.75S102%2C51%2C165.75%2C51S280.5%2C102%2C280.5%2C165.75S229.5%2C280.5%2C165.75%2C280.5z%22%20fill%3D%22%23FFFFFF%22/%3E%3C/svg%3E%0A') center right no-repeat;
+    background-size: 25px 25px;
+    -webkit-transition: .1s;
+    transition: .1s;
+    border-radius: 17px;
+}
+
+.search:focus {
+    width: 300px;
+    color: #fff;
+    background: #525568 url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20446.25%20446.25%22%3E%3Cpath%20d%3D%22M318.75%2C280.5h-20.4l-7.649-7.65c25.5-28.05%2C40.8-66.3%2C40.8-107.1C331.5%2C73.95%2C257.55%2C0%2C165.75%2C0S0%2C73.95%2C0%2C165.75%20%20%20%20S73.95%2C331.5%2C165.75%2C331.5c40.8%2C0%2C79.05-15.3%2C107.1-40.8l7.65%2C7.649v20.4L408%2C446.25L446.25%2C408L318.75%2C280.5z%20M165.75%2C280.5%20%20%20%20C102%2C280.5%2C51%2C229.5%2C51%2C165.75S102%2C51%2C165.75%2C51S280.5%2C102%2C280.5%2C165.75S229.5%2C280.5%2C165.75%2C280.5z%22%20fill%3D%22%23FFFFFF%22/%3E%3C/svg%3E%0A') center right 12px no-repeat;
+    background-size: 25px 25px;
+}
+
+.column-scroll {
+    display: block;
+    overflow: auto;
+    width: 100%;
+    height: calc(100vh - 95px);
+}
+
+.column-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.column {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 290px;
+}
+
+
+
+.item {
+    display: block;
+    overflow: hidden;
+    padding: 24px;
+    margin: 0 24px 24px 0;
+    background: #3a3e52;
+    border-radius: 10px;
 }

@@ -8,9 +8,18 @@
 </head>
 <div class="header">
 	<a href="" class="logo"></a>
+	<div class="headerUser">
+		<div class="headerUser__search">
+			<input type="text" class="search">
+		</div>
+		<div class="headerUser__notification headerUser__notification-alert"></div>
+		<div class="headerUser__avatar" style="background-image: url('img/user-1.jpg')"></div>
+	</div>
 </div>
 
-<div id="virtusKanban"></div>
+<div class="column-scroll">
+	<div id="virtusKanban" class="column-wrapper"></div>
+</div>
 
 <script src="script.js"></script>
 </body>

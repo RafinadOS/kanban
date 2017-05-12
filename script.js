@@ -284,6 +284,31 @@ var virtusKanban = new VirtusKanbanGrid(
                 id: 3,
                 name: "Return to version 17.2",
                 columnId: 1
+            },
+            {
+                id: 4,
+                name: "will send mail",
+                columnId: 2
+            },
+            {
+                id: 5,
+                name: "will send mail",
+                columnId: 2
+            },
+            {
+                id: 6,
+                name: "will send mail",
+                columnId: 2
+            },
+            {
+                id: 7,
+                name: "will send mail",
+                columnId: 2
+            },
+            {
+                id: 8,
+                name: "will send mail",
+                columnId: 3
             }
         ],
 

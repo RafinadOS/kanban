@@ -184,6 +184,7 @@ html, body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 100%;
 }
 
 .column {
@@ -191,6 +192,8 @@ html, body {
     -ms-flex: 1;
     flex: 1;
     min-width: 290px;
+    padding: 0 10px;
+    border-left: 1px dotted #3a3e52;
 }
 
 
@@ -199,7 +202,7 @@ html, body {
     display: block;
     overflow: hidden;
     padding: 24px;
-    margin: 0 24px 24px 0;
     background: #3a3e52;
     border-radius: 10px;
+    margin: 0 0 10px 0;
 }

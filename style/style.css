@@ -196,8 +196,6 @@ html, body {
     border-left: 1px dotted #3a3e52;
 }
 
-
-
 .item {
     display: block;
     overflow: hidden;
@@ -205,4 +203,8 @@ html, body {
     background: #3a3e52;
     border-radius: 10px;
     margin: 0 0 10px 0;
+}
+
+.item-disabled {
+	opacity: .5;
 }

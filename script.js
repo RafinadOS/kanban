@@ -234,11 +234,30 @@ VirtusKanbanItem.prototype = {
             this.layout.container.appendChild(this.layout.userAvatar);
             this.layout.container.appendChild(this.layout.info);
 
+			this.makeDraggable(this.layout.container);
+
             return this.layout.container;
         }
-    }
+    },
 
-}
+	makeDraggable: function (itemDragBlock)
+	{
+		jsDD.registerObjects(itemDragBlock);
+
+		var itemContainer = this.render();
+		
+		this.onDragStart();
+	},
+
+	
+	
+	
+	onDragStart: function ()
+	{
+
+	}
+
+};
 
 var virtusKanban = new VirtusKanbanGrid(
     {
@@ -314,6 +333,6 @@ var virtusKanban = new VirtusKanbanGrid(
 
         container: document.getElementById('virtusKanban')
     }
-)
+);
 
 virtusKanban.draw();
